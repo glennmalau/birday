@@ -32,7 +32,7 @@ jobs:
         run: ./gradlew assembleRelease  # Ganti dengan assembleDebug untuk build versi debug
 
       - name: Upload APK as an artifact (optional)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Perbarui ke versi v3
         with:
           name: android-apk
           path: app/build/outputs/apk/release/app-release.apk  # Sesuaikan dengan path APK Anda
